@@ -7,7 +7,7 @@ using namespace std;
 
 
 //ZAD.1
-
+/*
 int main() {
 
     int tab[10];
@@ -20,7 +20,7 @@ int main() {
         tab[i] = n;
 
     }
-    for (int i = 0; i < 10; i++) {
+    for (int i = 9; i >= 0; i--) {
         cout << tab[i] << "  ";
 
     }
@@ -28,43 +28,38 @@ int main() {
     return 0;
 }
 
-
-
-
-
-
+*/
 
 //ZAD.2
-/*
 
-void ciag(int n);
 
 int main() {
+
+    int tab[n];
     int n;
-    cout << "Podaj liczbe calkowita dodatnia: ";
+
+    cout << "podaj ile liczb wyznaczyc " << endl;
     cin >> n;
 
-   
-    if (n > 0) {
-        ciag(n);
-    }
-    else {
-        cout << "Liczba musi byc calkowita dodatnia" << endl;
-    }
+    int* tab = new int[n];
 
-    return 0;
+
+
+
+
+
 }
 
 
-void ciag(int n) {
-    cout << "dzielniki liczby: " << endl;
 
-    for (int i = 1; i <= n; i++) {
-        if (n % i == 0) {
-            cout << i << endl;
-        }
-    }
-}
+
+
+
+
+
+
+
+
 
     //ZAD.3
     /*
