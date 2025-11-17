@@ -31,35 +31,44 @@ int main() {
 */
 
 //ZAD.2
-
-
+/*
 int main() {
-
-    int tab[n];
     int n;
 
-    cout << "podaj ile liczb wyznaczyc " << endl;
+    cout << "podaj ile kolejnych liczb Fibonacciego chcesz wyznaczyc: ";
     cin >> n;
+
+    if (n <= 0) {
+        cout << "liczba musi byc dodatnia. koniec." << endl;
+        return 1;
+    }
 
     int* tab = new int[n];
 
+   
+    if (n >= 1) {
+        tab[0] = 0;
+    }
+    if (n >= 2) {
+        tab[1] = 1;
+    }
 
+    for (int i = 2; i < n; i++) {
+        tab[i] = tab[i - 1] + tab[i - 2];
+    }
 
+    cout << "ciag Fibonacciego: ";
 
+    for (int i = 0; i < n; i++) {
+        cout << tab[i] << " ";
+    }
+    cout << endl;
 
+    delete[] tab;
 
+    return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
+*/
 
     //ZAD.3
     /*
