@@ -71,40 +71,56 @@ int main() {
 */
 
     //ZAD.3
-    /*
+/*
+int main() {
 
-        int tab[10];
-        int suma = 0;
+    int tab[10];
+    float suma = 0;
 
-        srand(time(0)); 
+    srand(time(NULL));
 
+    for (int i = 0; i < 10; i++) {
+
+        tab[i] = rand();
+        suma += tab[i];
+
+    }
+
+    cout << "Wylosowane liczby: ";
+    for (int i = 0; i < 10; i++) {
+
+        cout << tab[i] << "  ";
+
+    }
+    cout << endl;
+
+    float srednia = suma / 10;
+
+    int licznik = 0;
+    int min = tab[0];
+    int max = tab[0];
+
+    
+    for (int i = 0; i < 10; i++) {
         
-        for (int i = 0; i < 10; i++) {
-            tab[i] = rand() % 100;
-            cout << tab[i] << " ";
-            suma += tab[i];
+        if (tab[i] < srednia) {
+            licznik++;
         }
 
-        double srednia = suma / 10.0;
-        cout << "\nŚrednia: " << srednia << endl;
+        if (tab[i] < min) min = tab[i];
+        if (tab[i] > max) max = tab[i];
+    }
 
-        
-        int mniejsze = 0;
-        for (int i = 0; i < 10; i++) {
-            if (tab[i] < srednia) mniejsze++;
-        }
-        cout << "Liczb mniejszych od średniej: " << mniejsze << endl;
+    cout << "Srednia: " << srednia << endl;
+    cout << "Mniejszych od sredniej: " << licznik << endl;
+    cout << "Najmniejsza: " << min << endl;
+    cout << "Najwieksza: " << max << endl;
 
-     
-        int min = tab[0], max = tab[0];
-        for (int i = 1; i < 10; i++) {
-            if (tab[i] < min) min = tab[i];
-            if (tab[i] > max) max = tab[i];
-        }
-        cout << "Najmniejsza: " << min << ", Największa: " << max << endl;
 
-        */
 
+    return 0;
+}
+*/
     //ZAD.4
 
 
