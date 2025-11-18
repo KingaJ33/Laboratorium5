@@ -122,8 +122,57 @@ int main() {
 }
 */
     //ZAD.4
+/*
+int main (){
+
+int wiersze;
+int kolumny;
+
+cout << "Podaj liczbe wierszy: ";
+cin >> wiersze;
+cout << "Podaj liczbe kolumn: ";
+cin >> kolumny;
+
+if (wiersze <= 0 || kolumny <= 0) {
+    cout << "Wymiary musza byc dodatnie." << endl;
+    return 1;
+}
 
 
+int** tab = new int* [wiersze];
+
+for (int i = 0; i < wiersze; i++) {
+    tab[i] = new int[kolumny];
+}
+
+cout << "\nWprowadz wartosci dla poszczegolnych komorek:" << endl;
+for (int i = 0; i < wiersze; i++) {
+    for (int j = 0; j < kolumny; j++) {
+        cout << "Element [" << i << "][" << j << "]: ";
+        cin >> tab[i][j];
+    }
+}
+
+cout << "\n--- Twoja Macierz ---" << endl;
+
+for (int i = 0; i < wiersze; i++) {
+    for (int j = 0; j < kolumny; j++) {
+        cout << tab[i][j] << "\t";
+    }
+    cout << endl;
+}
+
+for (int i = 0; i < wiersze; i++) {
+    delete[] tab[i];
+}
+delete[] tab;
+
+
+return 0;
+}
+*/
+
+//ZAD.5
 
 
 
